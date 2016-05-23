@@ -1,5 +1,5 @@
 #!/bin/sh
-
+cd /data5/svn-to-git/git-repo/
 for i in *; do
 	if [[ -d "$i/.git" ]]; then
 		cd "$i"
@@ -10,3 +10,5 @@ for i in *; do
 		cd ..
 	fi
 done
+cd /data5/svn-to-git/git-svn-scripts
+/bin/sh ./git_svn_up.sh
